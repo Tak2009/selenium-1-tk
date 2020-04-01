@@ -1,0 +1,342 @@
+{
+  "id": "d5625f08-02f8-49e5-bc36-e45eab6adcbd",
+  "version": "2.0",
+  "name": "StartHotelTest",
+  "url": "http://example.selenium.jp",
+  "tests": [{
+    "id": "35760d9d-c18a-445c-ad68-c5cf82860e07",
+    "name": "平日-２泊-朝食なし",
+    "commands": [{
+      "id": "65bb4408-5256-4dcb-8182-1b2678c6b120",
+      "comment": "",
+      "command": "open",
+      "target": "/reserveApp_Renewal/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96cb28bd-38bf-4358-9428-efc79d457ce3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1057",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a9dc97c-0aba-46e3-bacc-3a1f060477b5",
+      "comment": "",
+      "command": "click",
+      "target": "id=datePick",
+      "targets": [
+        ["id=datePick", "id"],
+        ["css=#datePick", "css:finder"],
+        ["xpath=//input[@id='datePick']", "xpath:attributes"],
+        ["xpath=//form[@id='reserve_info']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7314c22-7e02-4155-a861-a389e0125534",
+      "comment": "",
+      "command": "click",
+      "target": "css=.datepicker-days .prev",
+      "targets": [
+        ["css=.datepicker-days .prev", "css:finder"],
+        ["xpath=//th", "xpath:position"],
+        ["xpath=//th[contains(.,'«')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "238e3e42-bd9f-4e12-ae7d-3016f68d5dcc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.datepicker-days .prev",
+      "targets": [
+        ["css=.datepicker-days .prev", "css:finder"],
+        ["xpath=//th", "xpath:position"],
+        ["xpath=//th[contains(.,'«')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "37eed688-07f1-46fd-8b51-3b91b9701bbb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.datepicker-days .prev",
+      "targets": [
+        ["css=.datepicker-days .prev", "css:finder"],
+        ["xpath=//th", "xpath:position"],
+        ["xpath=//th[contains(.,'«')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa743912-52a4-4882-abc4-96862b4fd13c",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.datepicker-days .prev",
+      "targets": [
+        ["css=.datepicker-days .prev", "css:finder"],
+        ["xpath=//th", "xpath:position"],
+        ["xpath=//th[contains(.,'«')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0777043c-79ea-440c-b17a-1d60fbc40268",
+      "comment": "",
+      "command": "click",
+      "target": "css=.datepicker-days .prev",
+      "targets": [
+        ["css=.datepicker-days .prev", "css:finder"],
+        ["xpath=//th", "xpath:position"],
+        ["xpath=//th[contains(.,'«')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6845cb02-a1b4-4819-aaa4-633beb1d4b42",
+      "comment": "",
+      "command": "click",
+      "target": "id=datePick",
+      "targets": [
+        ["id=datePick", "id"],
+        ["css=#datePick", "css:finder"],
+        ["xpath=//input[@id='datePick']", "xpath:attributes"],
+        ["xpath=//form[@id='reserve_info']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58d29bca-5843-4555-b5b0-c4eb26b0c277",
+      "comment": "",
+      "command": "click",
+      "target": "id=datePick",
+      "targets": [
+        ["id=datePick", "id"],
+        ["css=#datePick", "css:finder"],
+        ["xpath=//input[@id='datePick']", "xpath:attributes"],
+        ["xpath=//form[@id='reserve_info']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd5eed57-ed72-4024-9cd0-bd7e4cb539ad",
+      "comment": "",
+      "command": "click",
+      "target": "id=datePick",
+      "targets": [
+        ["id=datePick", "id"],
+        ["css=#datePick", "css:finder"],
+        ["xpath=//input[@id='datePick']", "xpath:attributes"],
+        ["xpath=//form[@id='reserve_info']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fe73977-be4a-4e44-a66f-6d423213b3a3",
+      "comment": "",
+      "command": "type",
+      "target": "id=datePick",
+      "targets": [
+        ["id=datePick", "id"],
+        ["css=#datePick", "css:finder"],
+        ["xpath=//input[@id='datePick']", "xpath:attributes"],
+        ["xpath=//form[@id='reserve_info']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2018/12/17"
+    }, {
+      "id": "590ff667-650e-4971-958f-2b78153d4ea1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.active:nth-child(2)",
+      "targets": [
+        ["css=.active:nth-child(2)", "css:finder"],
+        ["xpath=//tr[4]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'17')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3a28c78-38f8-45ec-b9ac-696ef53c117a",
+      "comment": "",
+      "command": "click",
+      "target": "id=reserve_term",
+      "targets": [
+        ["id=reserve_term", "id"],
+        ["name=reserve_t", "name"],
+        ["css=#reserve_term", "css:finder"],
+        ["xpath=//select[@id='reserve_term']", "xpath:attributes"],
+        ["xpath=//form[@id='reserve_info']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42f53d90-f25c-421c-b3fb-832d4cfd532c",
+      "comment": "",
+      "command": "select",
+      "target": "id=reserve_term",
+      "targets": [],
+      "value": "label=2"
+    }, {
+      "id": "fec1676b-f82e-43b1-9e19-90c8eb2c20c6",
+      "comment": "",
+      "command": "click",
+      "target": "id=breakfast_off",
+      "targets": [
+        ["id=breakfast_off", "id"],
+        ["css=#breakfast_off", "css:finder"],
+        ["xpath=//input[@id='breakfast_off']", "xpath:attributes"],
+        ["xpath=//form[@id='reserve_info']/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ae139b7-01fd-44d3-b7f3-9979353667bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=guestname",
+      "targets": [
+        ["id=guestname", "id"],
+        ["name=gname", "name"],
+        ["css=#guestname", "css:finder"],
+        ["xpath=//input[@id='guestname']", "xpath:attributes"],
+        ["xpath=//form[@id='reserve_info']/input[9]", "xpath:idRelative"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d68fe604-8077-45f2-a84a-62af5dabdc67",
+      "comment": "",
+      "command": "type",
+      "target": "id=guestname",
+      "targets": [
+        ["id=guestname", "id"],
+        ["name=gname", "name"],
+        ["css=#guestname", "css:finder"],
+        ["xpath=//input[@id='guestname']", "xpath:attributes"],
+        ["xpath=//form[@id='reserve_info']/input[9]", "xpath:idRelative"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": "山田一郎"
+    }, {
+      "id": "2dd465a2-b410-4204-af10-6d7970137b51",
+      "comment": "",
+      "command": "click",
+      "target": "id=agree_and_goto_next",
+      "targets": [
+        ["id=agree_and_goto_next", "id"],
+        ["css=#agree_and_goto_next", "css:finder"],
+        ["xpath=//button[@id='agree_and_goto_next']", "xpath:attributes"],
+        ["xpath=//form[@id='reserve_info']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'利用規約に同意して次へ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a1b75db-d88d-4a1a-a98d-a182e27febff",
+      "comment": "",
+      "command": "click",
+      "target": "id=returnto_index",
+      "targets": [
+        ["id=returnto_index", "id"],
+        ["css=#returnto_index", "css:finder"],
+        ["xpath=//button[@id='returnto_index']", "xpath:attributes"],
+        ["xpath=//div[@id='slide1']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'戻る')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e21b255-2ca8-495e-8046-babe80642790",
+      "comment": "",
+      "command": "click",
+      "target": "id=datePick",
+      "targets": [
+        ["id=datePick", "id"],
+        ["css=#datePick", "css:finder"],
+        ["xpath=//input[@id='datePick']", "xpath:attributes"],
+        ["xpath=//form[@id='reserve_info']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83fb46a3-ec5b-4c05-a8ba-b33fc5b9bada",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) > .day:nth-child(6)",
+      "targets": [
+        ["css=tr:nth-child(3) > .day:nth-child(6)", "css:finder"],
+        ["xpath=//tr[3]/td[6]", "xpath:position"],
+        ["xpath=//td[contains(.,'17')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b69f348a-41ab-4ec2-99b9-b9eddf4841a0",
+      "comment": "",
+      "command": "click",
+      "target": "id=reserve_info",
+      "targets": [
+        ["id=reserve_info", "id"],
+        ["css=#reserve_info", "css:finder"],
+        ["xpath=//form[@id='reserve_info']", "xpath:attributes"],
+        ["xpath=//div[@id='slide1']/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "780fcf07-49fe-4c57-8e70-b1197a93f0ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=agree_and_goto_next",
+      "targets": [
+        ["id=agree_and_goto_next", "id"],
+        ["css=#agree_and_goto_next", "css:finder"],
+        ["xpath=//button[@id='agree_and_goto_next']", "xpath:attributes"],
+        ["xpath=//form[@id='reserve_info']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'利用規約に同意して次へ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c85b3b0a-8400-4802-99d7-5ce2676c9d74",
+      "comment": "",
+      "command": "click",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//span[@id='price']", "xpath:attributes"],
+        ["xpath=//h3[@id='total']/span", "xpath:idRelative"],
+        ["xpath=//h3/span", "xpath:position"],
+        ["xpath=//span[contains(.,'15750')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e91b3f6-e0eb-4074-8324-732f395ca7ed",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//span[@id='price']", "xpath:attributes"],
+        ["xpath=//h3[@id='total']/span", "xpath:idRelative"],
+        ["xpath=//h3/span", "xpath:position"],
+        ["xpath=//span[contains(.,'15750')]", "xpath:innerText"]
+      ],
+      "value": "14000"
+    }, {
+      "id": "8a1369ef-ed6d-47e5-978d-64ad055dca72",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4003278f-88e9-4883-b87a-df8edc91f2f5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["35760d9d-c18a-445c-ad68-c5cf82860e07"]
+  }],
+  "urls": ["http://example.selenium.jp/"],
+  "plugins": []
+}
