@@ -1,0 +1,19 @@
+{
+  "name": "purpletech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/SeleniumChromeTest.js --timeout 0"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chromedriver": "^80.0.0",
+    "mocha": "^7.1.1",
+    "selenium-webdriver": "^4.0.0-alpha.7"
+  }
+}
