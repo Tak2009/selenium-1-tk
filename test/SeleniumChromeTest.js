@@ -13,7 +13,7 @@ describe("SeleniumChromeTest", () => {
   });
 
   it("正常系_表示_ページタイトル", async () => {
-    // 指定したURLに遷移する
+    // 指定したURLに遷移する　//Navigate to
     await driver.get("https://saikeblog.com");
 
     // 要素を取得
@@ -24,7 +24,7 @@ describe("SeleniumChromeTest", () => {
   });
 
   it("正常系_遷移_技術ページ", async () => {
-    // 指定したURLに遷移する
+    // 指定したURLに遷移する Navigate to Url
     await driver.get("https://saikeblog.com");
 
     // タブの「技術」要素を取得し、クリックする
