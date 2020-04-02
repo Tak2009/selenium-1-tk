@@ -2,50 +2,75 @@
 const { Builder, By, Key, until } = require('selenium-webdriver')
 const assert = require('assert')
 
-describe('Default Suite', function() {
-  this.timeout(30000)
-  let driver
-  let vars
-  beforeEach(async function() {
-    driver = await new Builder().forBrowser('chrome').build()
-    vars = {}
-  })
-  afterEach(async function() {
-    await driver.quit();
-  })
-  it('平日-２泊-朝食なし', async function() {
+// describe('Default Suite', function() {
+//   this.timeout(30000)
+//   let driver
+//   let vars
+//   beforeEach(async function() {
+//     driver = await new Builder().forBrowser('chrome').build()
+//     vars = {}
+//   })
+//   afterEach(async function() {
+//     await driver.quit();
+//   })
+
+  describe("SeleniumChromeTest2", () => {
+  before(() => {
+    driver = new Builder().forBrowser("chrome").build();
+  });
+
+  after(() => {
+    return driver.quit();
+  });
+
+  it('Test', async function() {
+    
+    // Test name: Test
+    // Step # | name | target | value
+    // 1 | open | /reserveApp_Renewal/ | 
     await driver.get("http://example.selenium.jp/reserveApp_Renewal/")
-    await driver.manage().window().setRect(1920, 1057)
+    // 2 | setWindowSize | 1440x830 | 
+    await driver.manage().window().setRect(1440, 830)
+    // 3 | click | id=datePick | 
     await driver.findElement(By.id("datePick")).click()
-    await driver.findElement(By.css(".datepicker-days .prev")).click()
-    await driver.findElement(By.css(".datepicker-days .prev")).click()
-    await driver.findElement(By.css(".datepicker-days .prev")).click()
-    {
-      const element = await driver.findElement(By.css(".datepicker-days .prev"))
-      await driver.actions({ bridge: true}).doubleClick(element).perform()
-    }
-    await driver.findElement(By.css(".datepicker-days .prev")).click()
-    await driver.findElement(By.id("datePick")).click()
-    await driver.findElement(By.id("datePick")).click()
-    await driver.findElement(By.id("datePick")).click()
-    await driver.findElement(By.id("datePick")).sendKeys("2018/12/17")
-    await driver.findElement(By.css(".active:nth-child(2)")).click()
+    // 4 | click | css=tr:nth-child(1) > .day:nth-child(6) | 
+    await driver.findElement(By.css("tr:nth-child(1) > .day:nth-child(6)")).click()
+    // 5 | click | id=reserve_term | 
     await driver.findElement(By.id("reserve_term")).click()
+    // 6 | select | id=reserve_term | label=2
     {
       const dropdown = await driver.findElement(By.id("reserve_term"))
       await dropdown.findElement(By.xpath("//option[. = '2']")).click()
     }
+    // 7 | click | id=headcount | 
+    await driver.findElement(By.id("headcount")).click()
+    // 8 | select | id=headcount | label=2
+    {
+      const dropdown = await driver.findElement(By.id("headcount"))
+      await dropdown.findElement(By.xpath("//option[. = '2']")).click()
+    }
+    // 9 | click | id=breakfast_off | 
     await driver.findElement(By.id("breakfast_off")).click()
+    // 10 | click | id=guestname | 
     await driver.findElement(By.id("guestname")).click()
+    // 11 | type | id=guestname | 山田一郎
     await driver.findElement(By.id("guestname")).sendKeys("山田一郎")
+    // 12 | click | css=h3:nth-child(18) | 
+    await driver.findElement(By.css("h3:nth-child(18)")).click()
+    // 13 | click | id=agree_and_goto_next | 
     await driver.findElement(By.id("agree_and_goto_next")).click()
-    await driver.findElement(By.id("returnto_index")).click()
-    await driver.findElement(By.id("datePick")).click()
-    await driver.findElement(By.css("tr:nth-child(3) > .day:nth-child(6)")).click()
-    await driver.findElement(By.id("reserve_info")).click()
-    await driver.findElement(By.id("agree_and_goto_next")).click()
+    // 14 | click | id=price | 
     await driver.findElement(By.id("price")).click()
-    assert(await driver.findElement(By.id("price")).getText() == "14000")
-    await driver.close()
+    // 15 | assertText | id=price | 31500
+    debugger
+    // 検証
+    assert(await driver.findElement(By.id("price")).getText() == "15750")
+    console.log(await driver.findElement(By.id("price")).getText())
+    debugger
+    const guestname = await driver.findElement(By.id("gname")).getText()
+    assert.equal(guestname, "山田一郎")
+    
+    // console.log(await driver.findElement(By.id("price")).getText())
+
   })
 })
