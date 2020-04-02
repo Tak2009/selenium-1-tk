@@ -62,14 +62,12 @@ const assert = require('assert')
     // 14 | click | id=price | 
     await driver.findElement(By.id("price")).click()
     // 15 | assertText | id=price | 31500
-    debugger
-    // 検証
-    assert(await driver.findElement(By.id("price")).getText() == "15750")
-    console.log(await driver.findElement(By.id("price")).getText())
-    debugger
-    const guestname = await driver.findElement(By.id("gname")).getText()
-    assert.equal(guestname, "山田一郎")
+
+    assert(await driver.findElement(By.id("price")).getText() == "31500")
     
+    // console.log(await driver.findElement(By.id("price")).getText())
+    // const guestname = await driver.findElement(By.id("gname")).getText()
+    // assert.equal(guestname, "山田一郎")
     // console.log(await driver.findElement(By.id("price")).getText())
 
   })
