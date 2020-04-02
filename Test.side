@@ -1,0 +1,195 @@
+{
+  "id": "6cc75977-d0e3-42ab-b31e-955997bcf8a5",
+  "version": "2.0",
+  "name": "Test",
+  "url": "http://example.selenium.jp",
+  "tests": [{
+    "id": "2a41c5e0-6a1d-44fd-b91f-785914d3a6e7",
+    "name": "Test",
+    "commands": [{
+      "id": "50399911-59a2-449a-bd90-c668e69e27bd",
+      "comment": "",
+      "command": "open",
+      "target": "/reserveApp_Renewal/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "672ff10e-03b6-49c2-abe9-a66f64293da1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x830",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35b4f025-aab1-44ee-9802-15e661f112dd",
+      "comment": "",
+      "command": "click",
+      "target": "id=datePick",
+      "targets": [
+        ["id=datePick", "id"],
+        ["css=#datePick", "css:finder"],
+        ["xpath=//input[@id='datePick']", "xpath:attributes"],
+        ["xpath=//form[@id='reserve_info']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cae64e6-8b60-435a-ae85-e0bc0f321b44",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) > .day:nth-child(6)",
+      "targets": [
+        ["css=tr:nth-child(1) > .day:nth-child(6)", "css:finder"],
+        ["xpath=//td[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "912e9f4b-8bb4-48cb-9616-b26a29f1d020",
+      "comment": "",
+      "command": "click",
+      "target": "id=reserve_term",
+      "targets": [
+        ["id=reserve_term", "id"],
+        ["name=reserve_t", "name"],
+        ["css=#reserve_term", "css:finder"],
+        ["xpath=//select[@id='reserve_term']", "xpath:attributes"],
+        ["xpath=//form[@id='reserve_info']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67e5b9f9-e789-4cb4-8b75-1533650e6039",
+      "comment": "",
+      "command": "select",
+      "target": "id=reserve_term",
+      "targets": [],
+      "value": "label=2"
+    }, {
+      "id": "004be104-afef-4112-87ec-77f16c3963ab",
+      "comment": "",
+      "command": "click",
+      "target": "id=headcount",
+      "targets": [
+        ["id=headcount", "id"],
+        ["name=hc", "name"],
+        ["css=#headcount", "css:finder"],
+        ["xpath=//select[@id='headcount']", "xpath:attributes"],
+        ["xpath=//form[@id='reserve_info']/select[2]", "xpath:idRelative"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67947586-3659-4c06-beeb-39a8fb532376",
+      "comment": "",
+      "command": "select",
+      "target": "id=headcount",
+      "targets": [],
+      "value": "label=2"
+    }, {
+      "id": "1fb08b8e-99e8-43f2-ba16-6880b3d86a09",
+      "comment": "",
+      "command": "click",
+      "target": "id=breakfast_off",
+      "targets": [
+        ["id=breakfast_off", "id"],
+        ["css=#breakfast_off", "css:finder"],
+        ["xpath=//input[@id='breakfast_off']", "xpath:attributes"],
+        ["xpath=//form[@id='reserve_info']/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6510d86e-2959-4f1d-9aad-b3160f47fc78",
+      "comment": "",
+      "command": "click",
+      "target": "id=guestname",
+      "targets": [
+        ["id=guestname", "id"],
+        ["name=gname", "name"],
+        ["css=#guestname", "css:finder"],
+        ["xpath=//input[@id='guestname']", "xpath:attributes"],
+        ["xpath=//form[@id='reserve_info']/input[9]", "xpath:idRelative"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07e844bd-a140-454e-83ca-7684c038fab6",
+      "comment": "",
+      "command": "type",
+      "target": "id=guestname",
+      "targets": [
+        ["id=guestname", "id"],
+        ["name=gname", "name"],
+        ["css=#guestname", "css:finder"],
+        ["xpath=//input[@id='guestname']", "xpath:attributes"],
+        ["xpath=//form[@id='reserve_info']/input[9]", "xpath:idRelative"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": "山田一郎"
+    }, {
+      "id": "7e285e8f-9cff-4cac-9f56-9b7c694b2c68",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3:nth-child(18)",
+      "targets": [
+        ["css=h3:nth-child(18)", "css:finder"],
+        ["xpath=//form[@id='reserve_info']/h3[5]", "xpath:idRelative"],
+        ["xpath=//h3[5]", "xpath:position"],
+        ["xpath=//h3[contains(.,'お名前')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f1afde7-58d4-4d09-ac3d-d5f5159fb913",
+      "comment": "",
+      "command": "click",
+      "target": "id=agree_and_goto_next",
+      "targets": [
+        ["id=agree_and_goto_next", "id"],
+        ["css=#agree_and_goto_next", "css:finder"],
+        ["xpath=//button[@id='agree_and_goto_next']", "xpath:attributes"],
+        ["xpath=//form[@id='reserve_info']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'利用規約に同意して次へ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "59ea4ecb-67d2-4deb-9928-e50df59cb67d",
+      "comment": "",
+      "command": "click",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//span[@id='price']", "xpath:attributes"],
+        ["xpath=//h3[@id='total']/span", "xpath:idRelative"],
+        ["xpath=//h3/span", "xpath:position"],
+        ["xpath=//span[contains(.,'31500')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e241db9-2ee1-4d19-9cf8-4a160cd56247",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["css=#price", "css:finder"],
+        ["xpath=//span[@id='price']", "xpath:attributes"],
+        ["xpath=//h3[@id='total']/span", "xpath:idRelative"],
+        ["xpath=//h3/span", "xpath:position"],
+        ["xpath=//span[contains(.,'31500')]", "xpath:innerText"]
+      ],
+      "value": "31500"
+    }]
+  }],
+  "suites": [{
+    "id": "292e7530-311b-4346-b3d0-81f5196f84cf",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2a41c5e0-6a1d-44fd-b91f-785914d3a6e7"]
+  }],
+  "urls": ["http://example.selenium.jp/"],
+  "plugins": []
+}
