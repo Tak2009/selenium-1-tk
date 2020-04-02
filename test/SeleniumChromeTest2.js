@@ -29,12 +29,12 @@ const assert = require('assert')
     // Step # | name | target | value
     // 1 | open | /reserveApp_Renewal/ | 
     await driver.get("http://example.selenium.jp/reserveApp_Renewal/")
-    // 2 | setWindowSize | 1440x830 | 
-    await driver.manage().window().setRect(1440, 830)
+    // 2 | setWindowSize | 1920x1057 | 
+    await driver.manage().window().setRect(1920, 1057)
     // 3 | click | id=datePick | 
     await driver.findElement(By.id("datePick")).click()
-    // 4 | click | css=tr:nth-child(1) > .day:nth-child(6) | 
-    await driver.findElement(By.css("tr:nth-child(1) > .day:nth-child(6)")).click()
+    // 4 | click | css=.new:nth-child(2) | 
+    await driver.findElement(By.css(".new:nth-child(2)")).click()
     // 5 | click | id=reserve_term | 
     await driver.findElement(By.id("reserve_term")).click()
     // 6 | select | id=reserve_term | label=2
@@ -63,11 +63,11 @@ const assert = require('assert')
     await driver.findElement(By.id("price")).click()
     // 15 | assertText | id=price | 31500
 
-    assert(await driver.findElement(By.id("price")).getText() == "31500")
+    assert(await driver.findElement(By.id("price")).getText() == "14000")
     
     // console.log(await driver.findElement(By.id("price")).getText())
-    // const guestname = await driver.findElement(By.id("gname")).getText()
-    // assert.equal(guestname, "山田一郎")
+    const guestname = await driver.findElement(By.id("gname")).getText()
+    assert.equal(guestname, "山田一郎")
     // console.log(await driver.findElement(By.id("price")).getText())
 
   })

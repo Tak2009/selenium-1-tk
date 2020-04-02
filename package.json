@@ -7,8 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha test/SeleniumChromeTest2.js --timeout 0",
-    "test-brk": "mocha --inspect-brk test/SeleniumChromeTest2.js --timeout 0"
+    "test1": "mocha test/SeleniumChromeTest.js --timeout 0",
+    "test2": "mocha test/SeleniumChromeTest2.js --timeout 0",
+    "test2-brk": "mocha --inspect-brk test/SeleniumChromeTest2.js --timeout 0"
   },
   "author": "",
   "license": "ISC",
