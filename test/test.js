@@ -30,14 +30,14 @@ describe('計算確認 with should', () => {
 });
 
 //// TDD suiteは　BDD interfaceではエラーになる
-// suite('計算確認　with assert', ()=> {
-//       test('掛け算 assert', () => {
-//         assert.equal(6, math.multi(2, 3), '戻り値は6');
-//       });
-//       test('割り算 assert', () => {
-//         assert.equal(2, math.div(6, 2), '戻り値は3');
-//       });
-// });
+suite('計算確認　with assert', ()=> {
+      test('掛け算 assert', () => {
+        assert.equal(6, math.multi(2, 3), '戻り値は6');
+      });
+      test('割り算 assert', () => {
+        assert.equal(2, math.div(6, 2), '戻り値は3');
+      });
+});
 
 // vanilla TDD 
 assert.equal(math.multi(2,  3), 6, '戻り値は6');

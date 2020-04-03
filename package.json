@@ -8,6 +8,7 @@
   },
   "scripts": {
     "testjs": "mocha test/test.js",
+    "testjstdd": "mocha --ui tdd test/test.js",
     "test1": "mocha test/SeleniumChromeTest.js --timeout 0",
     "test2": "mocha test/SeleniumChromeTest2.js --timeout 0",
     "test3": "mocha test/SeleniumChromeTest3.js --timeout 0",
