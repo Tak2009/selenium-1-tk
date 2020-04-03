@@ -23,7 +23,7 @@ const assert = require('assert')
     return driver.quit();
   });
 
-  it('金額確認と登録者名を確認する', async function() {
+  it('金額確認', async function() {
     
     // Test name: Test
     // Step # | name | target | value
@@ -60,15 +60,54 @@ const assert = require('assert')
     // 13 | click | id=agree_and_goto_next | 
     await driver.findElement(By.id("agree_and_goto_next")).click()
     // 14 | click | id=price | 
-    await driver.findElement(By.id("price")).click()
+    // await driver.findElement(By.id("price")).click()
     // 15 | assertText | id=price | 14000
 
     assert(await driver.findElement(By.id("price")).getText() == "14000")
-    
     // console.log(await driver.findElement(By.id("price")).getText())
+  })
+
+  it('名前確認', async function() {
+    
+    // Test name: Test
+    // Step # | name | target | value
+    // 1 | open | /reserveApp_Renewal/ | 
+    await driver.get("http://example.selenium.jp/reserveApp_Renewal/")
+    // 2 | setWindowSize | 1920x1057 | 
+    await driver.manage().window().setRect(1920, 1057)
+    // 3 | click | id=datePick | 
+    await driver.findElement(By.id("datePick")).click()
+    // 4 | click | css=.new:nth-child(2) | 
+    await driver.findElement(By.css(".new:nth-child(2)")).click()
+    // 5 | click | id=reserve_term | 
+    await driver.findElement(By.id("reserve_term")).click()
+    // 6 | select | id=reserve_term | label=2
+    {
+      const dropdown = await driver.findElement(By.id("reserve_term"))
+      await dropdown.findElement(By.xpath("//option[. = '2']")).click()
+    }
+    // 7 | click | id=headcount | 
+    await driver.findElement(By.id("headcount")).click()
+    // 8 | select | id=headcount | label=2
+    {
+      const dropdown = await driver.findElement(By.id("headcount"))
+      await dropdown.findElement(By.xpath("//option[. = '2']")).click()
+    }
+    // 9 | click | id=breakfast_off | 
+    await driver.findElement(By.id("breakfast_off")).click()
+    // 10 | click | id=guestname | 
+    await driver.findElement(By.id("guestname")).click()
+    // 11 | type | id=guestname | 山田一郎
+    await driver.findElement(By.id("guestname")).sendKeys("山田一郎")
+    // 12 | click | css=h3:nth-child(18) | 
+    await driver.findElement(By.css("h3:nth-child(18)")).click()
+    // 13 | click | id=agree_and_goto_next | 
+    await driver.findElement(By.id("agree_and_goto_next")).click()
+    // 14 | click | id=price | 
+    // await driver.findElement(By.id("price")).click()
+   
+　　//検証
     const guestname = await driver.findElement(By.id("gname")).getText()
     assert.equal(guestname, "山田一郎")
-    // console.log(await driver.findElement(By.id("price")).getText())
-
   })
 })
