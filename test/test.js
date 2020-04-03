@@ -39,7 +39,7 @@ suite('計算確認　with assert', ()=> {
       });
 });
 
-// vanilla TDD 
+// TDD 
 assert.equal(math.multi(2,  3), 6, '戻り値は6');
 assert.equal(math.div(6,  3), 2, '戻り値は2');
 
