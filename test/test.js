@@ -29,7 +29,7 @@ describe('計算確認 with should', () => {
     });
 });
 
-//// TDD
+//// TDD suiteは　BDD interfaceではエラーになる
 // suite('計算確認　with assert', ()=> {
 //       test('掛け算 assert', () => {
 //         assert.equal(6, math.multi(2, 3), '戻り値は6');
