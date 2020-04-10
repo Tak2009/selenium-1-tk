@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test1": "mocha test/SeleniumChromeTest.js --timeout 0",
-    "lastName": "mocha test/lastName.js --timeout 0",
-    "lastName-brk": "mocha --inspect-brk test/lastName.js --timeout 0"
+    "firstName": "mocha test/firstName.js --timeout 0",
+    "firstName-brk": "mocha --inspect-brk test/firstName.js --timeout 0"
   },
   "author": "",
   "license": "ISC",
